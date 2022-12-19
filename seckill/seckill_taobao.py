@@ -159,6 +159,7 @@ class ChromeDrive:
                         while True:
                             try:
                                 if click_submit_times < 10:
+                                    # self.driver.find_element_by_xpath('//*[@id="submitOrderPC_1"]/div/a[2]').click()
                                     self.driver.find_element_by_link_text('提交订单').click()
                                     print("已经点击提交订单按钮")
                                     submit_succ = True
